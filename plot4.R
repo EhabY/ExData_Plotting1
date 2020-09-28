@@ -41,6 +41,9 @@ lines(data$DateTime, data$Sub_metering_1)
 lines(data$DateTime, data$Sub_metering_2, col = RED)
 lines(data$DateTime, data$Sub_metering_3, col = BLUE)
 
+legend("topright", col = c("black", RED, BLUE), lwd = 1, bty = "n", cex = 0.9,
+       legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+
 # bottom right
 with(data, plot(DateTime, Global_reactive_power, type = "l", xlab = "datetime"))
 
