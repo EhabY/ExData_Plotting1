@@ -18,9 +18,9 @@ data$DateTime <- as.POSIXct(paste(data$Date, data$Time), format = "%d/%m/%Y %H:%
 #                                   Plotting                                   #
 ################################################################################
 
-png("plot1.png", width = 480, height = 480)
+png("plot1.png", width = 480, height = 480) # open file
 
 hist(data$Global_active_power, xlab = "Global Active Power (kilowatts)",
-     main = "Global Active Power", col = "#ff2500")
+     main = "Global Active Power", col = "#ff2500") # plot
 
-dev.off()
+dev.off() # close file
